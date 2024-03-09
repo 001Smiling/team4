@@ -14,3 +14,6 @@ p {
 .custom-border {
     border-color: #9a0986;
 }
+.course_container .card {
+    height: 250px;
+}
