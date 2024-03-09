@@ -1,0 +1,25 @@
+.inspiration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1123px;
+    margin: auto;
+}
+
+.search_example {
+    background: #d9d9d9;
+    border-radius: 50px;
+    width: 1123px;
+    height: 62px;
+    text-align: center;
+}
+
+.example {
+    background-color: rgba(193, 115, 172, 0.45);
+    border: 1px solid #955a92;
+    border-radius: 48px;
+    width: 289px;
+    height: 289px;
+    margin: 20px;
+    text-align: center;
+}
