@@ -119,3 +119,32 @@ img {
 .evaluate-answer {
     padding-bottom: 10px;
 }
+@media (max-width: 1200px) {
+    .evaluate-text {
+        max-width: 50%;
+    }
+}
+@media (max-width: 1050px) {
+    .evaluate-block {
+        flex-direction: column;
+    }
+    .evaluate-text {
+        max-width: 100%;
+    }
+    .evaluate-img {
+        margin: 20px 0px;
+    }
+}
+@media (max-width: 480px) {
+    .evaluate-block-cont {
+        padding: 0px 20px;
+    }
+    .evaluate-text {
+        font-size: 14px;
+    }
+    .evaluate-block,
+    .evaluate-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
