@@ -1,0 +1,16 @@
+
+.custom-btn {
+    background: linear-gradient(90deg, #c273ac 0%, #91588f 100%); 
+    color: white;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+}
+.custom-color {
+    color: #9a0986; 
+}
+
+.custom-border {
+    border-color: #9a0986;
+}
