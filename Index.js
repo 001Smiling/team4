@@ -43,6 +43,18 @@ $(document).ready(function(){
         $('#question4').hide();
         $('#question8').show();
     });
+    $('#next11').click(function () {
+        $('#question2').hide();
+        $('#question6').show();
+    });
+    $('#next12').click(function () {
+        $('#question3').hide();
+        $('#question7').show();
+    });
+    $('#next13').click(function () {
+        $('#question4').hide();
+        $('#question8').show();
+    });
     $('#calculate').click(function () {
         var totalCost = $('#overlay').data('categoryCost');
     
