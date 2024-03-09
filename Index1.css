@@ -10,3 +10,141 @@ p {
 img {
     max-width: 100%;
 }
+.evaluate-block-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.evaluate-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.evaluate-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+}
+.evaluate-text {
+    max-width: 60%;
+}
+.evaluate-btn{
+    border-radius: 30px;
+    width: 426px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #c273ac 0%, #91588f 100%);
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; 
+}
+.evaluate-btn::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/477/h/8de7ccaeb23016d6ce6affdb6d169e0a.png') no-repeat;
+    background-size: cover;
+    animation-name: animBtn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animBtn {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.test-answer {
+    display: flex;
+    flex-direction: column;
+}
+.answer-btn {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #c273ac 0%, #91588f 100%);
+    color: white;
+    height: 30px;
+    border-radius: 30px;
+}
+.evaluate-answer {
+    padding-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .evaluate-text {
+        max-width: 50%;
+    }
+}
+@media (max-width: 1050px) {
+    .evaluate-block {
+        flex-direction: column;
+    }
+    .evaluate-text {
+        max-width: 100%;
+    }
+    .evaluate-img {
+        margin: 20px 0px;
+    }
+}
+@media (max-width: 480px) {
+    .evaluate-block-cont {
+        padding: 0px 20px;
+    }
+    .evaluate-text {
+        font-size: 14px;
+    }
+    .evaluate-block,
+    .evaluate-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
