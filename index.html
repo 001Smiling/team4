@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="Index1.css">
+    <link type="text/css" rel="stylesheet" href="evaluate.css">
     <link type="text/css" rel="stylesheet" href="Index2.css">
     <link type="text/css" rel="stylesheet" href="Index3.css">
     <link type="text/css" rel="stylesheet" href="Index4.css">
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
 
@@ -17,23 +16,82 @@
 
     </header>
     <main class="main">
-        <div class="evaluate">Оцени себя по достоинству</div>
-        <div class="evaluate-block">
-            <div class="evaluate-text">
-                <p>Многие женщины, работающие в сфере информационных технологий, сталкиваются с синдромом самозванца.
-                    Они
-                    недооценивают себя, свои знания и умения, и часто считают, что им здесь не место.</p>
-                <p>Но это далеко от истины! Каждая женщина в IT важна, ценна и необходима. Ваши навыки, опыт и таланты
-                    вносят огромный вклад в развитие индустрии информационных технологий.</p>
-                <p>Не дайте себя обмануть синдромом самозванца! Вы достойны успеха и признания. Нажмите на кнопку ниже,
-                    чтобы проверить свою истинную стоимость и увидеть, как ценят вас ваши коллеги и работодатели.</p>
+        <div class="evaluate-block-cont" id="evaluate">
+            <div class="evaluate-title">Оцени себя по достоинству</div>
+            <div class="evaluate-block">
+                <div class="evaluate-text">
+                    <p>Многие женщины, работающие в сфере информационных технологий, сталкиваются с синдромом
+                        самозванца.
+                        Они
+                        недооценивают себя, свои знания и умения, и часто считают, что им здесь не место.</p>
+                    <p>Но это далеко от истины! Каждая женщина в IT важна, ценна и необходима. Ваши навыки, опыт и
+                        таланты
+                        вносят огромный вклад в развитие индустрии информационных технологий.</p>
+                    <p>Не дайте себя обмануть синдромом самозванца! Вы достойны успеха и признания. Нажмите на кнопку
+                        ниже,
+                        чтобы проверить свою истинную стоимость и увидеть, как ценят вас ваши коллеги и работодатели.
+                    </p>
+                </div>
+                <div class="evaluate-img">
+                    <img src="./img/image 3.png" alt="evaluate">
+                </div>
             </div>
-            <div class="evaluate-img">k</div>
+            <button class="evaluate-btn" id="openTest">Оцени себя</button>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <div id="question1" class="question">
+                    <p>Выберите направление:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
+                                data-value="500">
+                            Frontend</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
+                                data-value="500">
+                            Backend</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
+                                data-value="500"> Дизайн
+                        </div>
+                        <button id="next1" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+
+                <div id="question2" class="question">
+                    <p id="questionText"></p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="JS" data-value="1000">
+                            JS</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="HTML" data-value="1000">
+                            HTML</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="CSS" data-value="1000">
+                            CSS</div>
+                        <button id="calculate" class="answer-btn">Подсчитать</button>
+                    </div>
+                </div>
+
+                <div id="question3" class="question">
+                    <p>Выберите ваши навыки:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Java" data-value="1000">
+                            Java</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Python"
+                                data-value="1000"> Python</div>
+                        <button id="calculate2" class="answer-btn">Подсчитать</button>
+                    </div>
+                </div>
+
+                <div id="result" class="question result2">
+                    <p>Ваша стоимость: <span class="costtotal" id="totalCost"></span></p>
+                </div>
+
+                <span class="close" id="closeTest">&times;</span>
+            </div>
         </div>
     </main>
     <footer class="footer">
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Index.js"></script>
 </body>
 
