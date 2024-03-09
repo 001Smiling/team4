@@ -24,8 +24,25 @@ $(document).ready(function(){
             $('#question1').hide();
             $('#question3').show();
         }
+        else if (category === 'design') {
+            $('#question1').hide();
+            $('#question2').hide();
+            $('#question3').hide();
+            $('#question4').show();
+        }
     });
-    
+    $('#next5').click(function () {
+        $('#question2').hide();
+        $('#question6').show();
+    });
+    $('#next6').click(function () {
+        $('#question3').hide();
+        $('#question7').show();
+    });
+    $('#next7').click(function () {
+        $('#question4').hide();
+        $('#question8').show();
+    });
     $('#calculate').click(function () {
         var totalCost = $('#overlay').data('categoryCost');
     
@@ -33,7 +50,7 @@ $(document).ready(function(){
             totalCost += parseInt($(this).data('value'));
         });
         $('#totalCost').text(totalCost);
-        $('#question2').hide();
+        $('#question6').hide();
         $('#result').show();
     });
     
@@ -44,8 +61,17 @@ $(document).ready(function(){
             totalCost += parseInt($(this).data('value'));
         });
         $('.costtotal').text(totalCost);
-        $('#question3').hide();
+        $('#question7').hide();
         $('.result2').show();
     });
+    $('#calculate3').click(function () {
+        var totalCost = $('#overlay').data('categoryCost');
     
+        $('input[name="skill"]:checked').each(function () {
+            totalCost += parseInt($(this).data('value'));
+        });
+        $('.costtotal3').text(totalCost);
+        $('#question8').hide();
+        $('.result3').show();
+    });
     });
