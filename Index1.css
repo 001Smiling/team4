@@ -10,10 +10,20 @@ p {
 img {
     max-width: 100%;
 }
+.header,
+.main {
+    overflow: hidden;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 .evaluate-block-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 .evaluate-title {
     font-size: 24px;
@@ -147,4 +157,38 @@ img {
         width: 100%;
         max-width: 100%;
     }
+}
+.hhhhh {
+    width: 64%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.gggggggg {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__name {
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+.header__nav {
+    font-size: 14px;
+}
+
+.question13,
+.question11,
+.question12 {
+    margin-bottom: 10px;
 }

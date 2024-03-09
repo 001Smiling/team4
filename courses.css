@@ -14,3 +14,9 @@ p {
 .custom-border {
     border-color: #9a0986;
 }
+.custom-button-qs.accordion-button:not(.collapsed){
+    background-color: #cea3c8;
+}
+.course_container .card {
+    height: 250px;
+}

@@ -2,13 +2,17 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="Index1.css">
-    <link type="text/css" rel="stylesheet" href="Index2.css">
-    <link type="text/css" rel="stylesheet" href="Index3.css">
-    <link type="text/css" rel="stylesheet" href="Index4.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="Index1.css" />
+    <link type="text/css" rel="stylesheet" href="Index2.css" />
+    <link type="text/css" rel="stylesheet" href="courses.css" />
+    <link type="text/css" rel="stylesheet" href="questions.css" />
+    <link type="text/css" rel="stylesheet" href="Index4.css" />
     <link type="text/css" rel="stylesheet" href="inspiration.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bs-brain@2.0.3/components/services/service-5/assets/css/service-5.css">
     <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
@@ -17,8 +21,7 @@
     <header class="header">
         <div class="header__menu">
             <div class="header__left">
-                <div class="header__logo">logo</div>
-                <div class="header__name">Наименование</div>
+                <div class="header__name">TrustInYour</div>
             </div>
             <nav class="header__nav">
                 <a href="#evaluate" class="header__item">Оцени себя</a>
@@ -31,12 +34,183 @@
         <div class="header__bottom">
             <div class="bottom-left">
                 <div class="left-text">Повысь свою ценность!</div>
-                <div class="left-botton">Оценить себя</div>
+                <div class="left-botton" id="openTest">Оценить себя</div>
             </div>
-            <div class="bottom-right"></div>
+            <div class="bottom-right">
+                <img src="./img/image1.png" alt="bfgbfg">
+            </div>
         </div>
     </header>
     <main class="main">
+        <div class="evaluate-block-cont">
+            <div class="hhhhh">
+                <h1><strong>Добро пожаловать в проект 'TrustInYour'!</strong></h1>
+                <div>Мы верим в силу каждой женщины и стремимся помочь им раскрыть свой потенциал. Наша миссия - помочь
+                    вам
+                    повысить ценность вашего труда, расширить круг профессиональных возможностей и дать уверенность в
+                    собственных силах. Здесь вы найдете тесты, консультации специалистов, курсы и общение с коллегами.
+                    Доверьтесь нам, и вместе мы сделаем шаг к успеху и профессиональному росту</div>
+            </div>
+        </div>
+        <div class="evaluate-block-cont" id="evaluate">
+            <div class="evaluate-title">Оцени себя по достоинству</div>
+            <div class="evaluate-block">
+                <div class="evaluate-text">
+                    <p>Многие женщины, работающие в сфере информационных технологий, сталкиваются с синдромом
+                        самозванца.
+                        Они
+                        недооценивают себя, свои знания и умения, и часто считают, что им здесь не место.</p>
+                    <p>Но это далеко от истины! Каждая женщина в IT важна, ценна и необходима. Ваши навыки, опыт и
+                        таланты
+                        вносят огромный вклад в развитие индустрии информационных технологий.</p>
+                    <p>Не дайте себя обмануть синдромом самозванца! Вы достойны успеха и признания. Нажмите на кнопку
+                        ниже,
+                        чтобы проверить свою истинную стоимость и увидеть, как ценят вас ваши коллеги и работодатели.
+                    </p>
+                </div>
+                <div class="evaluate-img">
+                    <img src="./img/image 3.png" alt="evaluate">
+                </div>
+            </div>
+            <button class="evaluate-btn" id="openTest2">Оцени себя</button>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="modal-block">
+                <div id="question1" class="question">
+                    <p>Выберите направление:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
+                                data-value="50000">
+                            Frontend</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
+                                data-value="60000">
+                            Backend</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
+                                data-value="40000"> Дизайн
+                        </div>
+                        <button id="next1" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+                <div id="question2" class="question">
+                    <p id="questionText"></p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="JS" data-value="5000">
+                            JS</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="HTML" data-value="3000">
+                            HTML</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="PHP" data-value="10000">
+                            CSS</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="CSS" data-value="1000">
+                            CSS</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="jquery"
+                                data-value="10000">
+                            Jquery</div>
+                        <button id="next5" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+
+                <div id="question3" class="question">
+                    <p>Выберите ваши навыки:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Java"
+                                data-value="10000">
+                            Java</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Python"
+                                data-value="1000"> Python</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="C" data-value="7000"> С#
+                        </div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Ruby" data-value="6000">
+                            Ruby
+                        </div>
+                        <button id="next6" class="answer-btn">Далее</button>
+
+                    </div>
+                </div>
+                <div id="question4" class="question">
+                    <p>Выберите ваши навыки:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="illustator"
+                                data-value="10000">
+                            Adobe illustator</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="photoshop"
+                                data-value="10000"> Adobe photoshop</div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="CoreIDraw"
+                                data-value="17000"> CoreIDraw
+                        </div>
+                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Figma"
+                                data-value="16000"> Figma
+                        </div>
+                        <button id="next7" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+                <div id="question6" class="question">
+                    <p>Уровень знание английского языка:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
+                                data-value="1000">
+                            Технический английский</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
+                                data-value="5000">
+                            Upper Intermediate</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
+                                data-value="10000"> Advanced
+                        </div>
+                        <button id="next11" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+                <div id="question7" class="question">
+                    <p>Уровень знание английского языка:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
+                                data-value="1000">
+                            Технический английский</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
+                                data-value="5000">
+                            Upper Intermediate</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
+                                data-value="10000"> Advanced
+                        </div>
+                        <button id="next12" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+                <div id="question8" class="question">
+                    <p>Уровень знание английского языка:</p>
+                    <div class="test-answer">
+                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
+                                data-value="1000">
+                            Технический английский</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
+                                data-value="5000">
+                            Upper Intermediate</div>
+                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
+                                data-value="10000"> Advanced
+                        </div>
+                        <button id="next13" class="answer-btn">Далее</button>
+                    </div>
+                </div>
+                <div id="question11" class="question">
+                    <p>Укажите ваше мнение по поводу размера вышей зарботной платы</p>
+                    <input type="text"><span>руб.</span>
+                    <button id="calculate" class="answer-btn">Подсчитать</button>
+                </div>
+                <div id="question12" class="question">
+                    <p>Укажите ваше мнение по поводу размера вышей зарботной платы</p>
+                    <input type="text"><span>руб.</span>
+                    <button id="calculate2" class="answer-btn">Подсчитать</button>
+                </div>
+                <div id="question13" class="question">
+                    <p>Укажите ваше мнение по поводу размера вышей зарботной платы</p>
+                    <input type="text"><span>руб.</span>
+                    <button id="calculate3" class="answer-btn">Подсчитать</button>
+                </div>
+                <div id="result" class="question result2 result3">
+                    <p>Вас оценят работодатели: <span class="costtotal costtotal3" id="totalCost"></span> руб.</p>
+                </div>
+
+                <span class="close" id="closeTest">&times;</span>
+            </div>
+        </div>
+
         <div class="consultations">
             <h2 class="consultations-title">
                 У вас сложности в работе или поиске работы?
@@ -46,23 +220,162 @@
             </h3>
             <div class="consultations-boxs">
                 <div class="box">
-                    <div class="box-img"> <img src="/img/" alt=""></div>
+                    <div class="box-img">
+                        <img src="/img/Black and white woman sitting on a pile of money.png" alt="hhgh">
+                    </div>
                     <div class="box-name">Юрист</div>
                     <button class="box-bottom">Консультация</button>
                 </div>
                 <div class="box">
-                    <div class="box-img"><img src="/img/" alt=""></div>
+                    <div class="box-img">
+                        <img src="/img/Black and white HR person looking at resume for hiring.png" alt="hhgh">
+                    </div>
                     <div class="box-name">HR</div>
                     <button class="box-bottom">Консультация</button>
                 </div>
                 <div class="box">
-                    <div class="box-img"><img src="/img/" alt=""></div>
+                    <div class="box-img">
+                        <img src="/img/Black and white three co workers brainstorming.png" alt="">
+                    </div>
                     <div class="box-name">Психолог</div>
                     <button class="box-bottom">Консультация</button>
                 </div>
             </div>
         </div>
+
+        <section class="bg-light py-3 py-md-5 py-xl-8">
+            <div class="course_container container overflow-hidden">
+                <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <div class="row">
+                            <div class="col-12 col-xl-11">
+                                <h3 class="fs-6 text-secondary mb-3 mb-xl-4 text-uppercase">Что мы предлагаем?</h3>
+                                <h2 class="display-5 mb-3 mb-xl-4">Развить ваши навыки и таланты.</h2>
+                                <p class="mb-3 mb-xl-4">Откройте новые горизонты и получите профессию, о которой вы
+                                    всегда мечтали - присоединяйтесь к нашим курсам сегодня.</p>
+                                <a href="#!" class="btn bsb-btn-3xl rounded-pill custom-btn evaluate-btn"
+                                    style="color: white">Узнать
+                                    больше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-lg-7 overflow-hidden">
+                        <div class="row gy-4">
+                            <div class="col-12 col-sm-6">
+                                <div class="card border-0 border-bottom shadow-sm custom-border">
+                                    <div class="card-body text-center p-1 p-xxl-2">
+                                        <h4 class="mb-4">Frontend</h4>
+                                        <p class="mb-4 text-secondary ">Узнайте основы создания красивых и
+                                            функциональных интерфейсов, освойте технологии веб-разработки</p>
+                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                                            <span class="custom-color">Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="card border-0 border-bottom shadow-sm custom-border">
+                                    <div class="card-body text-center p-1 p-xxl-2">
+                                        <h4 class="mb-4">Backend</h4>
+                                        <p class="mb-4 text-secondary">Погрузитесь в суть серверной разработки, освойте
+                                            языки программирования для создания мощных и масштабируемых веб-приложений
+                                        </p>
+                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                                            <span class="custom-color">Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="card border-0 border-bottom shadow-sm custom-border">
+                                    <div class="card-body text-center p-1 p-xxl-2">
+                                        <h4 class="mb-4">Дизайн</h4>
+                                        <p class="mb-4 text-secondary">Откройте для себя мир творчества, изучите
+                                            принципы хорошего дизайна и освойте основные инструменты</p>
+                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                                            <span class="custom-color">Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="card border-0 border-bottom shadow-sm custom-border">
+                                    <div class="card-body text-center p-1 p-xxl-2">
+                                        <h4 class="mb-4">Бесплатные курсы</h4>
+                                        <p class="mb-4 text-secondary">Откройте двери к знаниям и новым возможностям с
+                                            нашим бесплатным курсом</p>
+                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
+                                            <span class="custom-color">Подробнее</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Questions block -->
+        <section class="bg-light py-3 py-md-5">
+            <div class="questions_container container">
+                <h1>Часто задаваемые вопросы</h1>
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button custom-button-qs" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne ">
+                                Как я могу оценить свою квалификацию через вашу платформу?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample ">
+                            <div class="accordion-body">
+                                <p>Вы можете воспользоваться нашим инструментом для тестирования квалификации. Этот тест
+                                    разработан экспертами и призван выявить ваш уровень профессиональных навыков в сфере
+                                    вашей деятельности.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed custom-button-qs" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Я прошла тест, но не уверена в результате. Могу ли я получить дополнительные советы?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Да, у нас есть блок консультантов, где специалисты из различных областей могут провести
+                                более детальную оценку и дать личные рекомендации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed custom-button-qs" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Я нашла интересные курсы для повышения квалификации на вашем сайте, но я не уверена,
+                                стоит ли их проходить. Есть ли как-то возможность узнать об их эффективности?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Мы предлагаем площадку для обмена опытом, где пользователи могут поделиться своими
+                                    впечатлениями о курсах. Также, вы можете прочитать истории успеха других
+                                    пользователей, которые уже прошли эти курсы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="gggggggg">Для вдохновения </div>
         <div class="inspiration">
+
             <!-- <div class="search_example">
                 <div class="tags">
                     <a href="">#молодая_мамочка</a>
@@ -187,266 +500,11 @@
             </div>
 
         </div>
-        <div class="evaluate-block-cont" id="evaluate">
-            <div class="evaluate-title">Оцени себя по достоинству</div>
-            <div class="evaluate-block">
-                <div class="evaluate-text">
-                    <p>Многие женщины, работающие в сфере информационных технологий, сталкиваются с синдромом
-                        самозванца.
-                        Они
-                        недооценивают себя, свои знания и умения, и часто считают, что им здесь не место.</p>
-                    <p>Но это далеко от истины! Каждая женщина в IT важна, ценна и необходима. Ваши навыки, опыт и
-                        таланты
-                        вносят огромный вклад в развитие индустрии информационных технологий.</p>
-                    <p>Не дайте себя обмануть синдромом самозванца! Вы достойны успеха и признания. Нажмите на кнопку
-                        ниже,
-                        чтобы проверить свою истинную стоимость и увидеть, как ценят вас ваши коллеги и работодатели.
-                    </p>
-                </div>
-                <div class="evaluate-img">
-                    <img src="./img/image 3.png" alt="evaluate">
-                </div>
-            </div>
-            <button class="evaluate-btn" id="openTest">Оцени себя</button>
-        </div>
-        <div class="overlay" id="overlay">
-            <div class="modal-block">
-                <div id="question1" class="question">
-                    <p>Выберите направление:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
-                                data-value="50000">
-                            Frontend</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
-                                data-value="60000">
-                            Backend</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
-                                data-value="40000"> Дизайн
-                        </div>
-                        <button id="next1" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-                <div id="question2" class="question">
-                    <p id="questionText"></p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="JS" data-value="5000">
-                            JS</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="HTML" data-value="3000">
-                            HTML</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="PHP" data-value="10000">
-                            CSS</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="CSS" data-value="1000">
-                            CSS</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="jquery"
-                                data-value="10000">
-                            Jquery</div>
-                        <button id="next5" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-
-                <div id="question3" class="question">
-                    <p>Выберите ваши навыки:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Java"
-                                data-value="10000">
-                            Java</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Python"
-                                data-value="1000"> Python</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="C" data-value="7000"> С#
-                        </div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Ruby" data-value="6000">
-                            Ruby
-                        </div>
-                        <button id="next6" class="answer-btn">Далее</button>
-
-                    </div>
-                </div>
-                <div id="question4" class="question">
-                    <p>Выберите ваши навыки:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="illustator"
-                                data-value="10000">
-                            Adobe illustator</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="photoshop"
-                                data-value="10000"> Adobe photoshop</div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="CoreIDraw"
-                                data-value="17000"> CoreIDraw
-                        </div>
-                        <div class="evaluate-answer"><input type="checkbox" name="skill" value="Figma"
-                                data-value="16000"> Figma
-                        </div>
-                        <button id="next7" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-                <div id="question6" class="question">
-                    <p>Уровень знание английского языка:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
-                                data-value="1000">
-                            Технический английский</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
-                                data-value="5000">
-                            Upper Intermediate</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
-                                data-value="10000"> Advanced
-                        </div>
-                        <button id="next11" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-                <div id="question7" class="question">
-                    <p>Уровень знание английского языка:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
-                                data-value="1000">
-                            Технический английский</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
-                                data-value="5000">
-                            Upper Intermediate</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
-                                data-value="10000"> Advanced
-                        </div>
-                        <button id="next12" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-                <div id="question8" class="question">
-                    <p>Уровень знание английского языка:</p>
-                    <div class="test-answer">
-                        <div class="evaluate-answer"><input type="radio" name="category" value="frontend"
-                                data-value="1000">
-                            Технический английский</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="backend"
-                                data-value="5000">
-                            Upper Intermediate</div>
-                        <div class="evaluate-answer"><input type="radio" name="category" value="design"
-                                data-value="10000"> Advanced
-                        </div>
-                        <button id="next13" class="answer-btn">Далее</button>
-                    </div>
-                </div>
-                <div id="question11" class="question">
-                    <p>Укажите ваще мнение по поводу размера вышей зарботной платы</p>
-                    <input type="text"><span>руб.</span>
-                    <button id="calculate" class="answer-btn">Подсчитать</button>
-                </div>
-                <div id="question12" class="question">
-                    <p>Укажите ваще мнение по поводу размера вышей зарботной платы</p>
-                    <input type="text"><span>руб.</span>
-                    <button id="calculate2" class="answer-btn">Подсчитать</button>
-                </div>
-                <div id="question13" class="question">
-                    <p>Укажите ваще мнение по поводу размера вышей зарботной платы</p>
-                    <input type="text"><span>руб.</span>
-                    <button id="calculate3" class="answer-btn">Подсчитать</button>
-                </div>
-                <div id="result" class="question result2 result3">
-                    <p>Вас оценят работодатели: <span class="costtotal costtotal3" id="totalCost"></span> руб.</p>
-                </div>
-
-                <span class="close" id="closeTest">&times;</span>
-            </div>
-        </div>
-
-        <div class="consultations">
-            <h2 class="consultations-title">
-                У вас сложности в работе или поиске работы?
-            </h2>
-            <h3 class="consultations-subtitle">
-                Приходите к нам! У нас есть консультация специалистов:
-            </h3>
-            <div class="consultations-boxs">
-                <div class="box">
-                    <div class="box-img"></div>
-                    <div class="box-name">Юрист</div>
-                    <div class="box-bottom">Консультация</div>
-                </div>
-                <div class="box">
-                    <div class="box-img"></div>
-                    <div class="box-name">HR</div>
-                    <div class="box-bottom">Консультация</div>
-                </div>
-                <div class="box">
-                    <div class="box-img"></div>
-                    <div class="box-name">Психолог</div>
-                    <div class="box-bottom">Консультация</div>
-                </div>
-            </div>
-        </div>
-
-        <section class="bg-light py-3 py-md-5 py-xl-8">
-            <div class="container overflow-hidden">
-                <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
-                    <div class="col-12 col-lg-5">
-                        <div class="row">
-                            <div class="col-12 col-xl-11">
-                                <h3 class="fs-6 text-secondary mb-3 mb-xl-4 text-uppercase">Что мы предлагаем?</h3>
-                                <h2 class="display-5 mb-3 mb-xl-4">Развить ваши навыки и таланты.</h2>
-                                <p class="mb-3 mb-xl-4">Откройте новые горизонты и получите профессию, о которой вы
-                                    всегда мечтали - присоединяйтесь к нашим курсам сегодня.</p>
-                                <a href="#!" class="btn bsb-btn-3xl rounded-pill custom-btn">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-lg-7 overflow-hidden">
-                        <div class="row gy-4">
-                            <div class="col-12 col-sm-6">
-                                <div class="card border-0 border-bottom shadow-sm custom-border">
-                                    <div class="card-body text-center p-1 p-xxl-2">
-                                        <h4 class="mb-4">Frontend</h4>
-                                        <p class="mb-4 text-secondary ">Узнайте основы создания красивых и
-                                            функциональных интерфейсов, освойте технологии веб-разработки</p>
-                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
-                                            <span class="custom-color">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="card border-0 border-bottom shadow-sm custom-border">
-                                    <div class="card-body text-center p-1 p-xxl-2">
-                                        <h4 class="mb-4">Backend</h4>
-                                        <p class="mb-4 text-secondary">Погрузитесь в суть серверной разработки, освойте
-                                            языки программирования для создания мощных и масштабируемых веб-приложений
-                                        </p>
-                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
-                                            <span class="custom-color">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="card border-0 border-bottom shadow-sm custom-border">
-                                    <div class="card-body text-center p-1 p-xxl-2">
-                                        <h4 class="mb-4">Дизайн</h4>
-                                        <p class="mb-4 text-secondary">Откройте для себя мир творчества, изучите
-                                            принципы хорошего дизайна и освойте основные инструменты</p>
-                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
-                                            <span class="custom-color">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="card border-0 border-bottom shadow-sm custom-border">
-                                    <div class="card-body text-center p-1 p-xxl-2">
-                                        <h4 class="mb-4">Бесплатные курсы</h4>
-                                        <p class="mb-4 text-secondary">Откройте двери к знаниям и новым возможностям с
-                                            нашим бесплатным курсом</p>
-                                        <a href="#!" class="fw-bold text-decoration-none link-primary">
-                                            <span class="custom-color">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
     <footer class="footer"></footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Index.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
