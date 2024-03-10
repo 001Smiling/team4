@@ -71,12 +71,25 @@
     font-weight: 400;
     text-decoration: none;
     white-space: nowrap;
-    transition: all 0.6s;
     font-size: 14px;
   }
-  .menu__link:hover {
-    border-bottom: 1px solid white;
-    transition: 1s;
+  .menu__link {
+    position: relative;
+  }
+  .menu__link::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    display: block;
+    width: 0;
+    transition: 0.3s;
+    height: 1px;
+    background: white;
+  }
+  .menu__link:hover:after {
+    width: 100%;
   }
 
   .hamb {
