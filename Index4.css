@@ -397,8 +397,11 @@
     }      
 }
 @media (max-width: 400px) {
+    .header .header__bottom {
+        padding-top: 14vw;
+    } 
     .header {
-        height: 249px;
+        height: 270px;
     }
 }
 @media (max-width: 1050px) {

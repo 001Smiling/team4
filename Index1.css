@@ -32,6 +32,7 @@ button {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
+    text-align: center;
 }
 .evaluate-block {
     display: flex;
@@ -179,7 +180,6 @@ button {
 .hhhhh {
     width: 64%;
     text-align: center;
-    margin-bottom: 50px;
     margin-top: 50px;
 }
 .gggggggg {

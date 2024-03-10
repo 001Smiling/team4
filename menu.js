@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("noscroll");
     }
     var animateButton = function(element) {
+
         // Reset animation
         element.classList.remove('animate');
         // Add animation class
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function(){
           element.classList.remove('animate');
         }, 700); // Remove animation class after 700 ms
-      };
+    };
       
       var bubblyButtons = document.getElementsByClassName("bubbly-button");
       
