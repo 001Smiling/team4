@@ -7,6 +7,13 @@
 p {
     font-family: "Manrope", sans-serif;
 }
+#questions,
+#courses {
+    margin-top: 50px;
+}
+.questions_container h1{
+    padding: 10px 0px;
+}
 .custom-color {
     color: #9a0986; 
 }

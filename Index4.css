@@ -176,6 +176,10 @@
 .consultations {
   text-align: center;
 }
+.consultations-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
 .consultations .consultations-boxs {
   padding-top: 2vw;
   display: flex;
