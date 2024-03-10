@@ -1,46 +1,4 @@
 .header {
-  width: 100%;
-  height: 36vw;
-  background: linear-gradient(89deg, #c374ac 0%, #603c72 100%);
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 0.7vw;
-  color: #fff;
-  padding: 2vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  
-}
-.header .header__menu {
-  display: flex;
-  gap: 10vw;
-}
-.header .header__menu .header__left {
-  display: flex;
-  gap: 2vw;
-}
-.header .header__menu .header__nav {
-  width: 100%;
-  display: flex;
-  gap: 3vw;
-}
-.header .header__menu .header__nav a {
-  text-decoration: none;
-  color: #fff;
-  white-space: nowrap;
-}
-
-
-
-
-
-
-
-
-.header {
     width: 100%;
     height: 570px;
     background: linear-gradient(89deg, #c374ac 0%, #603c72 100%);
