@@ -6,7 +6,10 @@
 p {
     padding: 0;
 }
-
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 img {
     max-width: 100%;
 }
