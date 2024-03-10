@@ -114,10 +114,14 @@ button {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    font-size: 22px;
 }
 .test-answer {
     display: flex;
     flex-direction: column;
+}
+.answer-btn {
+    padding: 0px 30px;
 }
 .answer-btn {
     margin-top: 20px;
@@ -202,7 +206,22 @@ button {
 }
 }
 @media (max-width: 480px) {
+    .modal-block {
+        padding: 40px 30px;
+    }
     .hhhhh {
         width: 100%;
     }
+    .input-test {
+        width: 80%;
+    }
+}
+
+.footer {
+    background: linear-gradient(89deg, #c374ac 0%, #603c72 100%);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
