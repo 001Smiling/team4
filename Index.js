@@ -86,4 +86,9 @@ $(document).ready(function(){
         $('#question8').hide();
         $('.result3').show();
     });
+
+// тест
+    $('.input-test').on('input', function() {
+        $(this).val($(this).val().replace(/\D/g, ''));
+      });
 });
