@@ -27,21 +27,23 @@
     text-decoration: none;
     padding: 2px 1px 0;
     margin: 0.8em;
-    color: #3f3161;
+    font-weight: 600;
+    color: #91588f;
+    font-size: 14px;
 }
 
 .shestory a:hover {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #581f57;
 }
 
 .shestory a:active {
-    color: #de6523;
+    color: #581f57;
 }
 
 
 .example {
     /* background-color: #bde0c0; */
-    border: 1px solid;
+    border: 1px solid #581f57;
     border-radius: 48px;
     width: 289px;
     min-height: 289px;
