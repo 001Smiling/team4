@@ -333,14 +333,23 @@
     }
 }
 @media (max-width: 480px) {
+    .header .header__bottom {
+        padding-top: 11vw;
+    }    
     .header__name {
         display: none;
     }
     .header__name2 {
         display: block;
     }
+    .header .header__bottom .bottom-right {
+        width: 41vw;
+    }
     .header .header__bottom .left-text {
-        font-size: 5vw;
+        font-size: 5.5vw;
+    }
+    .header .header__bottom {
+        gap: 5vw;
     }
     .header .header__bottom .left-botton {
         font-size: 3vw;
