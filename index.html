@@ -19,18 +19,39 @@
 
 <body>
     <header class="header">
-        <div class="header__menu">
-            <div class="header__left">
+        <div class="header__top">
+            <div class="header__wrap" id="wrap">
                 <div class="header__name">BeliveInYourself</div>
+                <div class="header__name2">BIY</div>
+                <nav class="menu">
+                    <ul class="menu__list" id="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#evaluate">Оцени себя</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#consultations">Консультация профессионала</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#courses">Курсы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#questions">Частые вопросы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#inspiration">Для вдохновения</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
             </div>
-            <nav class="header__nav">
-                <a href="#evaluate" class="header__item">Оцени себя</a>
-                <a href="#consultations" class="header__item">Консультация профессионала</a>
-                <a href="#courses" class="header__item">Курсы</a>
-                <a href="#questions" class="header__item">Частые вопросы</a>
-                <a href="#inspiration" class="header__item">Для вдохновения</a>
-            </nav>
         </div>
+        <div class="popup" id="popup"></div>
         <div class="header__bottom">
             <div class="bottom-left">
                 <div class="left-text">Повысь свою ценность!</div>
@@ -211,7 +232,7 @@
             </div>
         </div>
 
-        <div class="consultations">
+        <div class="consultations" id="consultations">
             <h2 class="consultations-title">
                 У вас сложности в работе или поиске работы?
             </h2>
@@ -243,12 +264,12 @@
             </div>
         </div>
 
-        <section class="bg-light py-3 py-md-5 py-xl-8">
+        <section class="bg-light py-3 py-md-5 py-xl-8" id="courses">
             <div class="course_container container overflow-hidden">
                 <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
                     <div class="col-12 col-lg-5">
                         <div class="row">
-                            <div class="col-12 col-xl-11">
+                            <div class="col-12 col-xl-11 title-talent">
                                 <h3 class="fs-6 text-secondary mb-3 mb-xl-4 text-uppercase">Что мы предлагаем?</h3>
                                 <h2 class="display-5 mb-3 mb-xl-4">Развить ваши навыки и таланты.</h2>
                                 <p class="mb-3 mb-xl-4">Откройте новые горизонты и получите профессию, о которой вы
@@ -316,7 +337,7 @@
             </div>
         </section>
         <!-- Questions block -->
-        <section class="bg-light py-3 py-md-5">
+        <section class="bg-light py-3 py-md-5" id="questions">
             <div class="questions_container container">
                 <h1>Часто задаваемые вопросы</h1>
                 <div class="accordion accordion-flush" id="accordionExample">
@@ -373,7 +394,7 @@
                 </div>
             </div>
         </section>
-        <div class="gggggggg">Для вдохновения </div>
+        <div class="gggggggg" id="inspiration">Для вдохновения </div>
         <div class="inspiration">
 
             <!-- <div class="search_example">
@@ -504,6 +525,7 @@
     <footer class="footer"></footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Index.js"></script>
+    <script src="./menu.js"></script>
     <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

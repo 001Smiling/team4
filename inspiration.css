@@ -22,7 +22,7 @@
     justify-content: space-evenly;
 }
 
-a {
+.shestory a {
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
@@ -30,15 +30,11 @@ a {
     color: #3f3161;
 }
 
-a:visited {
-    color: grey;
-}
-
-a:hover {
+.shestory a:hover {
     border-bottom: 1px solid;
 }
 
-a:active {
+.shestory a:active {
     color: #de6523;
 }
 

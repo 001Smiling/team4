@@ -178,17 +178,20 @@ button {
     justify-content: center;
 }
 
-.header__name {
-    font-size: 30px;
-    font-weight: 900;
-    border-bottom: 1px solid black;
-}
-.header__nav {
-    font-size: 14px;
-}
+
 
 .question13,
 .question11,
 .question12 {
     margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+.hhhhh {
+    width: 81%;
+}
+}
+@media (max-width: 480px) {
+    .hhhhh {
+        width: 100%;
+    }
 }
