@@ -28,4 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
       hamb.classList.remove("active");
       body.classList.remove("noscroll");
     }
+    var animateButton = function(element) {
+        // Reset animation
+        element.classList.remove('animate');
+        // Add animation class
+        element.classList.add('animate');
+        setTimeout(function(){
+          element.classList.remove('animate');
+        }, 700); // Remove animation class after 700 ms
+      };
+      
+      var bubblyButtons = document.getElementsByClassName("bubbly-button");
+      
+      for (var i = 0; i < bubblyButtons.length; i++) {
+        setInterval(animateButton, 1000, bubblyButtons[i]); // Repeat animation every 1000 ms (1 second)
+      }
 })
