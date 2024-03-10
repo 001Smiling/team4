@@ -158,6 +158,13 @@ button {
         max-width: 100%;
     }
 }
+.input-test {
+    border-radius: 30px;
+    border:1px solid #91588f;
+    outline: none;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
 .hhhhh {
     width: 64%;
     text-align: center;

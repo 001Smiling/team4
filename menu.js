@@ -28,4 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
       hamb.classList.remove("active");
       body.classList.remove("noscroll");
     }
+    // тест
+    const input = document.querySelector('.input-test');
+        input.addEventListener('keydown', (e) => {
+            if(!/^\d$/.test(e.key)) {
+                e.preventDefault();
+    }
+});
 })
