@@ -95,6 +95,7 @@
     display: block;
     width: 0;
     transition: 0.3s;
+    z-index: 150;
     height: 1px;
     background: white;
   }
